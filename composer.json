@@ -1,5 +1,6 @@
 {
     "name": "yigit-serin/office-converter",
+    "type": "library",
     "description": "PHP Wrapper for LibreOffice",
     "keywords": ["Office", "Converter"],
     "homepage": "https://github.com/yigit-serin/office-converter",
@@ -10,12 +11,13 @@
 	    "email": "jc.nwobodo@gmail.com"
 	},
 	{
-            "name": "Yigit Seri",
-            "email": "yigits@yandex.com"
-        }
+	    "name": "Yigit Serin",
+	    "email": "yigits@yandex.com"
+	}
     ],
     "require": {
-	"php": ">=5.5.9"
+	"php": ">=5.5.9",
+	"ncjoes/office-converter": "^0.1.3"
     },
     "require-dev": {
 	"phpunit/phpunit": "5.5.*"
@@ -26,6 +28,11 @@
     "autoload": {
 	"psr-4": {
 	    "NcJoes\\OfficeConverter\\": "src/OfficeConverter"
+	}
+    },
+    "extra": {
+	"branch-alias": {
+	    "dev-master": "v0.1.x-dev"
 	}
     },
     "minimum-stability": "stable"
